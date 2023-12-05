@@ -39,7 +39,12 @@ async function populate() {
   
     const myPara = document.createElement("p");
     myPara.textContent = `Hometown: ${obj.homeTown} // Formed: ${obj.formed}`;
+    //my code
+    const myPara1 = document.createElement("p");
+    myPara1.textContent = `Secret Base: ${obj.secretBase}`;
+    //
     header.appendChild(myPara);
+    header.appendChild(myPara1);
   }
   
   
@@ -102,3 +107,8 @@ async function populate() {
   
   populate();
   
+
+  let myObj = { name: "Chris", age: 38 };
+  console.log(myObj);
+  let myString = JSON.stringify(myObj);
+  console.log(myString);
